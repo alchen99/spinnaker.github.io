@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Triggering pipelines with Artifactory"
+title:  "Triggering pipelines with Artifactory Maven repositories"
 sidebar:
   nav: guides
 ---
@@ -11,13 +11,13 @@ sidebar:
 > See [Prerequisites](#prerequisites).
 
 This guide explains how to add a [JFrog
-Artifactory](https://jfrog.com/artifactory/) trigger to your pipeline.
+Artifactory Maven Repository](https://jfrog.com/artifactory/) trigger to your pipeline.
 
 # Prerequisites
 
 This guide assumes you have the following:
 
-* An Artifactory search configured in Spinnaker (see the [documentation for the
+* An Artifactory search for the Maven repository configured in Spinnaker (see the [documentation for the
   `hal config repository artifactory` Halyard
 commands](/reference/halyard/commands/#hal-config-repository-artifactory))
 

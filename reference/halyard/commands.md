@@ -9383,12 +9383,12 @@ hal config repository [subcommands]
 ```
 
 #### Subcommands
- * `artifactory`: Manage and view Spinnaker configuration for the artifactory repository
+ * `artifactory`: Manage and view Spinnaker configuration for the Artifactory repository
 
 ---
 ## hal config repository artifactory
 
-Manage and view Spinnaker configuration for the artifactory repository
+Manage and view Spinnaker configuration for the Artifactory repository
 
 #### Usage
 ```
@@ -9400,14 +9400,14 @@ hal config repository artifactory [parameters] [subcommands]
  * `--no-validate`: (*Default*: `false`) Skip validation.
 
 #### Subcommands
- * `disable`: Set the artifactory repository as disabled
- * `enable`: Set the artifactory repository as enabled
- * `search`: Manage and view Spinnaker configuration for the artifactory repository services's search
+ * `disable`: Set the Artifactory repository as disabled
+ * `enable`: Set the Artifactory repository as enabled
+ * `search`: Manage and view Spinnaker configuration for the Artifactory repository services's search
 
 ---
 ## hal config repository artifactory disable
 
-Set the artifactory repository as disabled
+Set the Artifactory repository as disabled
 
 #### Usage
 ```
@@ -9422,7 +9422,7 @@ hal config repository artifactory disable [parameters]
 ---
 ## hal config repository artifactory enable
 
-Set the artifactory repository as enabled
+Set the Artifactory repository as enabled
 
 #### Usage
 ```
@@ -9437,7 +9437,7 @@ hal config repository artifactory enable [parameters]
 ---
 ## hal config repository artifactory search
 
-Manage and view Spinnaker configuration for the artifactory repository services's search
+Manage and view Spinnaker configuration for the Artifactory Maven repository services's search.
 
 #### Usage
 ```
@@ -9450,16 +9450,16 @@ hal config repository artifactory search SEARCH [parameters] [subcommands]
  * `--no-validate`: (*Default*: `false`) Skip validation.
 
 #### Subcommands
- * `add`: Add a search for the artifactory repository service.
- * `delete`: Delete a specific artifactory search by name.
- * `edit`: Edit a search for the artifactory repository service.
- * `get`: Get the specified search details for artifactory.
- * `list`: List the search names for artifactory.
+ * `add`: Add a search for the Artifactory Maven repository service.
+ * `delete`: Delete a specific Artifactory Maven search by name.
+ * `edit`: Edit a search for the Artifactory Maven repository service.
+ * `get`: Get the specified search details for Artifactory.
+ * `list`: List the search names for Artifactory.
 
 ---
 ## hal config repository artifactory search add
 
-Add a search for the artifactory repository service.
+Add a search for the Artifactory Maven repository service.
 
 #### Usage
 ```
@@ -9468,21 +9468,21 @@ hal config repository artifactory search add SEARCH [parameters]
 
 #### Parameters
 `SEARCH`: The name of the search to operate on.
- * `--base-url`: (*Required*) The base url your artifactory search is reachable at.
+ * `--base-url`: (*Required*) The base url your Artifactory search is reachable at.
  * `--deployment`: If supplied, use this Halyard deployment. This will _not_ create a new deployment.
- * `--groupId`: (*Required*) The group id in your artifactory to be searched.
+ * `--groupId`: (*Required*) The group id in your Artifactory to be searched.
  * `--no-validate`: (*Default*: `false`) Skip validation.
- * `--password`: (*Required*) (*Sensitive data* - user will be prompted on standard input) The password of the artifactory user to authenticate as.
+ * `--password`: (*Required*) (*Sensitive data* - user will be prompted on standard input) The password of the Artifactory user to authenticate as.
  * `--read-permissions`: (*Default*: `[]`) A user must have at least one of these roles in order to view this build search or use it as a trigger source.
- * `--repo`: (*Required*) The repo in your artifactory to be searched.
- * `--username`: (*Required*) The username of the artifactory user to authenticate as.
+ * `--repo`: (*Required*) The Maven repo in your Artifactory to be searched.
+ * `--username`: (*Required*) The username of the Artifactory user to authenticate as.
  * `--write-permissions`: (*Default*: `[]`) A user must have at least one of these roles in order to be able to run jobs on this build search.
 
 
 ---
 ## hal config repository artifactory search delete
 
-Delete a specific artifactory search by name.
+Delete a specific Artifactory Maven search by name.
 
 #### Usage
 ```
@@ -9498,7 +9498,7 @@ hal config repository artifactory search delete SEARCH [parameters]
 ---
 ## hal config repository artifactory search edit
 
-Edit a search for the artifactory repository service.
+Edit a search for the Artifactory Maven repository service.
 
 #### Usage
 ```
@@ -9509,23 +9509,23 @@ hal config repository artifactory search edit SEARCH [parameters]
 `SEARCH`: The name of the search to operate on.
  * `--add-read-permission`: Add this permission to the list of read permissions.
  * `--add-write-permission`: Add this permission to the list of write permissions.
- * `--base-url`: The base url your artifactory search is reachable at.
+ * `--base-url`: The base url your Artifactory search is reachable at.
  * `--deployment`: If supplied, use this Halyard deployment. This will _not_ create a new deployment.
- * `--groupId`: The group id in your artifactory to be searched.
+ * `--groupId`: The group id in your Artifactory to be searched.
  * `--no-validate`: (*Default*: `false`) Skip validation.
- * `--password`: The password of the artifactory user to authenticate as.
+ * `--password`: The password of the Artifactory user to authenticate as.
  * `--read-permissions`: A user must have at least one of these roles in order to view this build search or use it as a trigger source.
  * `--remove-read-permission`: Remove this permission from the list of read permissions.
  * `--remove-write-permission`: Remove this permission from the list of write permissions.
- * `--repo`: The repo in your artifactory to be searched.
- * `--username`: The username of the artifactory user to authenticate as.
+ * `--repo`: The Maven repo in your Artifactory to be searched.
+ * `--username`: The username of the Artifactory user to authenticate as.
  * `--write-permissions`: A user must have at least one of these roles in order to be able to run jobs on this build search.
 
 
 ---
 ## hal config repository artifactory search get
 
-Get the specified search details for artifactory.
+Get the specified search details for the Artifactory Maven repository.
 
 #### Usage
 ```
@@ -9541,7 +9541,7 @@ hal config repository artifactory search get SEARCH [parameters]
 ---
 ## hal config repository artifactory search list
 
-List the search names for artifactory.
+List the search names for Artifactory.
 
 #### Usage
 ```
